@@ -1,7 +1,6 @@
 FROM maven:3.9-eclipse-temurin-21 AS build
 WORKDIR /app
 COPY . .
-# O segredo está aqui: forçamos ele a entrar na pasta demo!
 WORKDIR /app/demo
 RUN mvn clean package -DskipTests
 
