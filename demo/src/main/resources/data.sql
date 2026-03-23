@@ -1,0 +1,2 @@
+INSERT INTO carona (origem, destino, horario, vagas, motorista) VALUES ('Centro', 'UFAPE', '18:30', 3, 'Joaozinho');
+INSERT INTO carona (origem, destino, horario, vagas, motorista) VALUES ('UFAPE', 'Cohab 2', '21:45', 2, 'Maria');
