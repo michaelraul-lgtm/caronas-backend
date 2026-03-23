@@ -1,6 +1,7 @@
 FROM maven:3.9-eclipse-temurin-21 AS build
 WORKDIR /app
 COPY . .
+RUN sed -i 's/[^[:print:][:space:]]//g' src/main/resources/application.properties
 RUN mvn clean package -DskipTests -Dproject.build.sourceEncoding=UTF-8
 
 FROM eclipse-temurin:21-jdk
